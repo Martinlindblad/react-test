@@ -36,3 +36,79 @@
     transform: rotate(360deg);
   }
 }
+
+table {
+  width: 500px;
+  text-align: center;
+  margin: 100px auto;
+  border: 2px solid black;
+}
+
+th {
+  width: 50%;
+}
+
+.btn--delete {
+  background-color: firebrick; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn--submit {
+  background-color: green; /* Green */
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+label {
+  padding: 10px 4px 10px 10px
+}
+
+ul {
+  text-align: left;
+  width: 500px;
+  margin: 100px auto;
+}
+
+h1 {
+  font-size: 45px;
+  animation-name: textShadow;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textShadow {
+  0% {
+    text-shadow:0px 0px red,
+                0px 0px green;
+  }
+  25% {
+    text-shadow:6px 6px red,
+                -6px -6px green,
+                1px 1px black,
+                -1px -1px black;
+    color: white;
+  }
+  50% {
+    text-shadow:-6px 6px red,
+                6px -6px green,
+                1px 1px black,
+                -1px -1px black;
+    color: white;
+  }
+  75% {
+    text-shadow:0px 0px red,
+                0px 0px green;
+    color: black;
+  }
+}
