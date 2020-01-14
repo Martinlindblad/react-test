@@ -13,13 +13,17 @@ test('did app render?', () => {
   expect(wrapper.find('.App').exists()).toBe(true);
 });
 
+
+
+
 // test('call the submit characters', () => {
 //   const persons = {
 //     name: 'kalle',
-//     title: 'ingengör' 
+//     job: 'ingengör' 
 //   };
-//   const wrapper = mount(<App characters={persons} />);
-//   expect(wrapper.state().characters).toBe(persons);
+//   const wrapper = mount(<App />);
+//   wrapper.setState({characters: persons})
+//   expect(wrapper.state('characters')).toBe(persons)
 //   wrapper.instance().handleSubmit();
 //   expect(wrapper.state().characters).toBeFalsy();
 // });
@@ -27,15 +31,15 @@ test('did app render?', () => {
 
 
 
-test('Rendering a new Character', () => {
-    const hitlist = shallow(<App />);
+// test('Rendering a new Character', () => {
+//     const hitlist = shallow(<App />);
   
-    hitlist.find('form').simulate('change', {
-        target: { value: 'New value' }
-      });
+//     hitlist.find('form').simulate('change', {
+//         target: { value: 'New value' }
+//       });
     
-      expect(inputBox.state('inputValue')).toMatch('New value');
-     });
+//       expect(inputBox.state('inputValue')).toMatch('New value');
+//      });
     
     
     
