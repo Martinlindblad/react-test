@@ -14,15 +14,17 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --watchAll=false",
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open",
+    "cypress:e2e": "start-server-and-test start http://localhost:3000 cypress:open"
   },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js",
       "!src/index.js",
       "!src/registerServiceWorker.js",
-      "!src/setupTests.js",  
+      "!src/setupTests.js",
       "!src/Api.js",
       "!src/serviceWorker.js"
     ],
@@ -35,7 +37,6 @@
       }
     }
   },
-  
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -52,9 +53,11 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^3.8.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.3",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "start-server-and-test": "^1.10.6"
   }
 }

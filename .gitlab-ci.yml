@@ -7,16 +7,16 @@ test:
   script:
     - npm run test
 
-pages:
-  stage: deploy
-  before_script: 
-    - npm install
-  script:
-    - npm run build
-    - rm -rf public
-    - mv build public
-  artifacts:
-    paths:
-      - public
-  only:
-    - master
+# pages:
+#   stage: deploy
+#   before_script: 
+#     - npm install
+#   script:
+#     - npm run build
+#     - rm -rf public
+#     - mv build public
+#   artifacts:
+#     paths:
+#       - public
+#   only:
+#     - master
